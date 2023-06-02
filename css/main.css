@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Montserrat-Regular';
+  color: #2B3541;
 }
 
 ul {
@@ -67,7 +68,6 @@ a {
 
 .header-nav a {
   font-size: 18px;
-  color: #2B3541;
   text-decoration: none;
   transition: 0.3s;
   position: relative;
@@ -119,7 +119,6 @@ a {
 }
 
 .main-text {
-  color: #2B3541;
   flex: 0 0 676px;
   padding-top: 192px;
   padding-bottom: 239px;
@@ -156,7 +155,6 @@ h1 {
 }
 
 .main-wrap a {
-  color: #2B3541;
   background-color: #FBF138;
   box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
   padding: 23px 30px;
@@ -198,4 +196,360 @@ h1 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.events-wrapper {
+  padding-top: 127px;
+}
+
+h2 {
+  font-family: 'Montserrat-Bold';
+  font-size: 40px;
+  line-height: 1.25;
+
+}
+
+.events-wrapper h2 {
+  padding-bottom: 7px;
+}
+
+.events-items {
+  display: flex;
+  gap: 20.02px;
+}
+
+.events-item {
+  position: relative;
+  padding-top: 30px;
+  padding-left: 30.03px;
+  width: 367.32px;
+  height: 569px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events-item::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+  opacity: 0.3;
+}
+
+.events-item:hover::before {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.event-1 {
+  background-image: url(../images/@2x/maraphon@2x.png);
+}
+
+.event-2 {
+  background-image: url(../images/@2x/Vebinar\ 1@2x.png);
+}
+
+.event-3 {
+  background-image: url(../images/@2x/Vebinar\ 2.png);
+}
+
+.events-top {
+  font-family: 'Montserrat-Bold';
+}
+
+.events-item time {
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.25;
+  max-width: 260px;
+  margin-top: 21px;
+}
+
+.events-bottom {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #FBF138;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.timetable-wrapper {
+  padding-top: 162px;
+  padding-bottom: 160px;
+}
+
+.timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 38px;
+}
+
+.timetable h2 {
+  width: 356px;
+  margin: 0;
+}
+
+.timetable-dates {
+  font-family: 'Montserrat-Bold';
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.timetable-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 309px 73px 281px;
+  gap: 20px 20px;
+}
+
+.timetable-item {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: rgba(43, 53, 65, 0.5);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timetable-item:nth-child(1) {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.timetable-item:nth-child(2) {
+  grid-row: 2/4;
+  grid-column: 1/2;
+}
+
+.timetable-item:nth-child(3) {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.timetable-item:nth-child(4) {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.timetable-item:nth-child(5) {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.timetable-item:nth-child(6) {
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+.timetable-item time {
+  font-size: 18px;
+  /* line-height: 1.5; */
+  color: #010101;
+  opacity: 0.7;
+  text-align: end;
+  display: block;
+}
+
+h4 {
+  font-family: 'Montserrat-Bold';
+  font-size: 18px;
+  line-height: 1.25;
+  color: #2B3541;
+}
+
+.timetable-wrap h4 {
+  margin: 0;
+  margin-top: 40px;
+}
+
+.timetable-img {
+  display: block;
+  width: 97px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timetable-img-1 {
+  background-image: url(../images/icons/body.svg);
+  width: 65px;
+  height: 65px;
+}
+
+.timetable-img-2 {
+  background-image: url(../images/icons/jump.svg);
+  width: 67px;
+  height: 107px;
+}
+
+.timetable-img-3 {
+  background-image: url(../images/icons/bottle.svg);
+  width: 42px;
+  height: 85px;
+}
+
+.timetable-img-4 {
+  background-image: url(../images/icons/heart.svg);
+  width: 65px;
+  height: 61px;
+}
+
+.timetable-img-5 {
+  background-image: url(../images/icons/dumbbell.svg);
+  width: 91px;
+  height: 50px;
+}
+
+.timetable-img-6 {
+  background-image: url(../images/icons/weight.svg);
+  width: 58px;
+  height: 66px;
+}
+
+.subscribe {
+  background: #F3F3F3;
+}
+
+.subscribe-wrapper {
+  padding: 79px;
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.subscribe-wrapper h2 {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.subscribe-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.subscribe-box {}
+
+.subscribe-email {
+  width: 351px;
+  background-color: #FFFFFF;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  opacity: 0.3;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.checkbox:checked,
+.checkbox:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkbox:checked+label,
+.checkbox:not(:checked)+label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.checkbox:checked+label::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: calc(50% - 10px);
+  background-color: #2B3541;
+  border-radius: 2px;
+  border: 2px solid #2B3541;
+}
+
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked+label::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transition: all .2s ease;
+  opacity: 1;
+  left: 4px;
+  top: calc(50% - 6px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked)+label::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: calc(50% - 10px);
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #2B3541;
+}
+
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.checkbox:not(:checked)+label::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transition: all .2s ease;
+  opacity: 0;
+  left: 4px;
+  top: calc(50% - 6px);
+  background-position: 0 -12px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2048px-White_check.svg.png);
+}
+
+.radio:checked+label::before {
+  border-radius: 100%;
+}
+
+.agreement label {
+  font-size: 11px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.agreement a {
+  color: #2B3541;
+  text-decoration: underline;
+}
+
+.subscribe-wrap button {
+  width: 225px;
+  height: 65px;
+  padding: 0 30px;
+  background: #FBF138;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+  font-family: 'Montserrat-Bold';
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none;
 }
